@@ -1,0 +1,85 @@
+\documentclass{jlreq}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+
+% --- hyperref設定（赤枠防止） ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  filecolor=magenta,
+  urlcolor=blue,
+  citecolor=black,
+}
+
+% --- コード表示環境 ---
+\lstnewenvironment{mylisting}[1][]%
+  {\lstset{
+    frame=single,
+    basicstyle=\ttfamily\small,
+    numbersep=6pt,
+    tabsize=3,
+    extendedchars=true,
+    xleftmargin=17pt,
+    framexleftmargin=17pt,
+    breaklines=true,
+    numbers=left,
+    language=Python,  % 必要に応じて変更 (After EffectsやTouchDesignerなら "none" でもOK)
+    #1
+  }}{}
+
+\begin{document}
+
+% --- 表紙 ---
+\begin{titlepage}
+  \centering
+  \vspace{2cm}
+  {\LARGE \bfseries プロジェクションマッピング \par}
+  \vspace{3cm}
+  {\Large 第1版 \par}
+  \vspace{4cm}
+  {\Large \today \par}
+  \vspace{0.5cm}
+  {\LARGE \bfseries 高知工科大学 情報学群 \par}
+  \vfill
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+% --- 各章構成 ---
+\section{はじめに}
+
+
+\section{企画概要}
+
+\section{システム構成}
+
+
+\section{投影環境と設営}
+
+
+\section{映像制作}
+
+
+\section{マッピング設定}
+
+
+\section{運用・当日準備}
+
+
+\section{成果と改善点}
+
+
+\section{付録}
+
+
+\end{document}
